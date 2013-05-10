@@ -4,15 +4,15 @@ require 'sass-globbing'
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/"
-http_images_path = "/images"
-http_fonts_path = "/fonts"
-css_dir = "public/stylesheets"
+http_path = "/blog/"
+http_images_path = "/blog/images"
+http_fonts_path = "/blog/font"
+css_dir = "public/blog/stylesheets"
 
 # Local development paths
 sass_dir = "sass"
 images_dir = "source/images"
-fonts_dir = "source/fonts"
+fonts_dir = "source/font"
 
 line_comments = false
 output_style = :compressed
