@@ -1,0 +1,20 @@
+---
+author: admin
+comments: true
+date: 2010-12-01 00:17:14+00:00
+layout: post
+slug: 3x3x5bld
+title: 3x3x5BLD
+wordpress_id: 36
+categories:
+- Cubing
+---
+
+Today I accomplished a feat that very few people in the world can claim: solving the 3x3x5 blindfolded. There is only one legitimate video on Youtube and I haven't been able to find any posts elsewhere about it, so I may be only the second person to do this.
+
+<!-- more -->
+Since there was no information available, I had to invent my own method. This method is basically an extension of Old Pochmann for 3x3x3, with a few extra tricks to make it possible to memorize. The method is actually quite simple and only needs a few algorithms, most of which are PLLs or standard 3x3x5 algorithms. I generated the others using CubeExplorer and ACube. I will probably make a tutorial as soon as I have the time.
+
+The solve was not as hard as I thought - this was only my second full attempt. My total time was 14:11.40 and memorization probably took 8 or 9 minutes (I didn't think to check the time). This method has three parity cases but none came up during this solve. After the second phase of the solve I realized I had made a mistake because two edge pairs were flipped, making it impossible to turn the thin bottom layer (an odd quirk of the 3x3x5 and other shapeshifting puzzles). On a 3x3x3 I would not have realized this and I would have failed the solve. On the 3x3x5 it's obvious when a piece is incorrectly oriented, so I flipped both edges and kept going, hoping I hadn't made any other mistakes. I had no idea whether the cube would be solved or not when I took off the blindfold.
+
+Nothing in the realm of speedsolving can match the feeling of taking off a blindfold and seeing a solved puzzle, especially for the first time. The 3x3x5 was a very fun challenge since it's both very similar and very different from the 3x3x3. Half the fun was developing the method - if you want to try this puzzle I recommend trying it yourself before reading my tutorial. Next I'll probably learn 4x4BLD, but I may work on MultiBLD first to build up my memory. I'd love to do a 3x3x7, but I don't own one and don't plan on buying one.

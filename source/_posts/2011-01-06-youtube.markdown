@@ -1,0 +1,15 @@
+---
+author: admin
+comments: true
+date: 2011-01-06 05:59:36+00:00
+layout: post
+slug: youtube
+title: Youtube
+wordpress_id: 49
+categories:
+- Cubing
+---
+
+I now have a Youtube channel: [http://www.youtube.com/user/TheDeltaWhy](http://www.youtube.com/user/TheDeltaWhy).
+
+I uploaded some videos from the Marymount Open 2010, a cubing competition I went to in October, and the world's first video tutorial for 3x3x5BLD. I made the tutorial a few weeks ago but was waiting until I had a solve video before posting it. I still haven't made the solve video but I decided to post the tutorial anyway. A text tutorial is currently in the works.

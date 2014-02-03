@@ -1,0 +1,19 @@
+---
+author: admin
+comments: true
+date: 2010-08-28 21:13:46+00:00
+layout: post
+slug: burncdcc
+title: BurnCDCC
+wordpress_id: 30
+categories:
+- Software
+---
+
+There are two ways to design software. Either you can write a program to do as much as possible, or you can write it to do one thing and do it really well. BurnCDCC follows the second philosophy: all it does is burn CD's from ISO images, but it makes the process incredibly easy.<!-- more -->An ISO image, for those who don't know, is a byte-for-byte copy of the data on a CD. Any bootable CD you find on the Internet will come in this format, whether it's a Linux installer, an antivirus utility, or any other bootable tool. Many CD-burning programs can burn ISO's, but Windows by itself can't. Fortunately, BurnCDCC is a free program, with no nag screens or ads. You don't even need to install it first.
+
+[![](http://limiero.com/michael/files/2010/08/burncdcc.png)](http://limiero.com/michael/files/2010/08/burncdcc.png)
+
+Just download it [here](http://www.terabyteunlimited.com/downloads/burncdcc.zip), run the EXE file, and browse for the ISO file. In most cases BurnCDCC will automatically find your CD burner, so all you need to do is click start. The program will prompt you to insert a blank CD, and if you put in a CD-RW it will ask if you want to erase it. In a few minutes (longer if you're burning a DVD or Blu-Ray, which are also supported) the drive will eject and you're ready to go. If you're paranoid you can also check the "Read Verify" option, which takes longer but will ensure that there are no errors.
+
+[[BurnCDCC](http://www.terabyteunlimited.com/downloads/burncdcc.zip) - [TeraByte Unlimited](http://www.terabyteunlimited.com/)] 
