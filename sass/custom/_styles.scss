@@ -1,5 +1,10 @@
 body {
   #content {
+    img {
+      vertical-align: top;
+      border: 2px solid #ddd;
+      margin: 4px;
+    }
     > article {
       hr {
         margin: 2em;
