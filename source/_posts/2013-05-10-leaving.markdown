@@ -3,7 +3,7 @@ layout: post
 title: "Leaving"
 date: 2013-05-10 01:12
 comments: true
-categories: 
+categories: Barcelona
 ---
 As I write this, I'm preparing to leave for a summer study-abroad program in Barcelona. I am pretty excited, naturally - I've been out of the country a few times but certainly never for almost three months.
 

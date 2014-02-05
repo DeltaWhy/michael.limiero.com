@@ -3,7 +3,7 @@ layout: post
 title: "Home"
 date: 2013-05-11 23:07
 comments: true
-categories: 
+categories: Barcelona
 ---
 I've never really thought of home as a place. Despite living in the same house for eight years, I never felt like the house itself was all that important. Home was a feeling, not a building. Sitting on my window seat, playing guitar late into the night - that was home. Eating cereal in the kitchen after everyone else had gone to bed, and pondering the mysteries of the universe - that was home. I'll admit I'm rather fond of those particular spots, but the home-ness of those things doesn't belong to a specific point in space. Playing guitar at church, in my mind, is more 'home' than say, studying for a test in my own room.
 
