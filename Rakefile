@@ -4,9 +4,9 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "limieroc@limiero.com"
+ssh_user       = "michael@gravel.miscjunk.net"
 ssh_port       = "22"
-document_root  = "~/michael/"
+document_root  = "/srv/http/michael.limiero.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
