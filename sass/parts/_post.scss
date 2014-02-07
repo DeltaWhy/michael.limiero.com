@@ -21,7 +21,7 @@
 			@include link-colors($color-gray02, $color-gray01);
 			@include transition(0.3s);
 		}
-		.date, .tags, .comments{
+		.date, .tags, .comments, .permalink{
 			padding-left: 30px;
 			position: relative;
 			&:before{
@@ -39,5 +39,6 @@
 		.date:before{content: "\f073";}
 		.tags:before{content: "\f02c";}
 		.comments:before{content: "\f075";}
+                .permalink:before{content: "\f0c1";}
 	}
 }
