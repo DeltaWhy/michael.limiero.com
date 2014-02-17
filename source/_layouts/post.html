@@ -7,21 +7,23 @@ single: true
 {% unless page.sharing == false %}
 	{% include post/sharing.html %}
 {% endunless %}
-{% unless page.webmention == false %}
-<script id="webmention-hosted">
-  (function () {
-    var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-    url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-    url = url && url[0] ? url[0].href : false;
-    sn.type = "text/javascript"; sn.async = true;
-    sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
-    s.parentNode.insertBefore(sn, s);
-  }());
-</script>
-{% endunless %}
-{% if site.disqus_short_name and page.comments == true %}
+{% if site.disqus_short_name and page.comments == true or page.webmention != false %}
 <section id="comment">
     <h2 class="title">Comments</h2>
+    {% unless page.webmention == false %}
+    <script id="webmention-hosted">
+    (function () {
+        var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
+        url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
+        url = url && url[0] ? url[0].href : false;
+        sn.type = "text/javascript"; sn.async = true;
+        sn.src = "//webmention.herokuapp.com/api/embed?url=" + encodeURIComponent(url || window.location);
+        s.parentNode.insertBefore(sn, s);
+    }());
+    </script>
+    {% endunless %}
+    {% if site.disqus_short_name and page.comments == true %}
     <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+    {% endif %}
 </section>
 {% endif %}

@@ -8,3 +8,29 @@
 		margin-bottom: 20px;
 	}
 }
+
+#content .webmention-container {
+    @include border-shadow-reverse();
+    margin-bottom: 20px;
+    .webmention-mention {
+        @include border-shadow();
+        padding: 4px 0 4px 56px;
+        position: relative;
+        min-height: 56px;
+        .webmention-author {
+            font-weight: bold;
+            img {
+                border: none;
+                border-radius: 3px;
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+        }
+        .webmention-name {
+            font-style: italic;
+        }
+    }
+}

@@ -74,7 +74,7 @@ linkedin_user: michaellimiero
 
 # Twitter
 twitter_user: michaellimiero
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -101,4 +101,4 @@ disqus_show_comment_count: true
 google_analytics_tracking_id:
 
 # Facebook Like
-facebook_like: true
+facebook_like: false
