@@ -7,7 +7,7 @@ require "stringex"
 ssh_user       = "michael@gravel.miscjunk.net"
 ssh_port       = "22"
 document_root  = "/srv/http/michael.limiero.com/"
-rsync_delete   = false
+rsync_delete   = true
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
 
