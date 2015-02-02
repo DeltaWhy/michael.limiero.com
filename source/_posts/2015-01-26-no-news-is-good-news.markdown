@@ -5,6 +5,8 @@ date: 2015-01-26 11:28:45 -0500
 comments: true
 categories: Experiments
 ---
+**Update:** [version 2 of my user style]({{ root_url }}/files/nonews.css). Scroll down to the bottom for more info.
+
 Some of you might have noticed that I haven't been very active on social media lately. More likely you haven't, because I haven't completely disconnected either. But I am in fact doing a deliberate experiment where I'm reevaluating my Internet usage. This is not a "social media is evil" discussion. This is an attempt to do more of what matters, and cut back on everything else.
 
 I've toyed with these ideas for a long time, but until this month I couldn't figure out a good way to do anything about it. Like it or not, Facebook is important. There is no better tool right now for messaging, event planning, and group project management. The real problem is the news feed. There is no way to filter out the useful stuff from an infinite stream of memes, party pictures, and links to interesting but useless articles. So I thought, what if I just cut that out and keep everything else? I have done exactly that using a custom user style and the Stylish extension for Firefox. My Facebook now looks like this:
@@ -17,12 +19,15 @@ I can still see anything posted directly to my wall, or anything I am tagged in 
 On the mobile front, I was surprised to find that Facebook's messenger app works just fine without the main app installed. This is great because it means I'm still reachable but don't have the temptation of infinite distraction right in my pocket. They also have a standalone groups app, but unfortunately nothing for events. Twitter doesn't have such a clean solution. I kept the app installed because I consider @mentions important enough to interrupt me, and I just have to rely on old-fashioned self control to not look at the stream. I would really like to build a custom solution, but right now I just don't have the time to work on it, and I also want to make sure I fully think it through before I write any code.
 
 So to wrap this up:
+
 ## What's out
 * Facebook news feed
 * Twitter news feed
 * Hacker News front page
 * Reddit front page
 * "Infinite" subreddits: AskReddit and the like
+* (v2) Likes, favorites, and retweets: these are great for a dopamine rush, but have near zero actual usefulness.
+
 ## What's in
 * Direct messages
 * Mentions and wall posts
@@ -44,3 +49,7 @@ Basically the same as before. From slowest to fastest:
 * Send a good old-fashioned SMS. Unlike a phone call, I can reply to it without having to leave class.
 
 I'm committing to this experiment until March 1 at minimum. At first it was going to be a January thing but I quickly realized it was going to take more time to eliminate the habits. I still have the reflex of Ctrl+T Facebook Ctrl+T Twitter even though I know there's not going to be anything there to see. Most likely on that date I'll decide to continue. If you're interested in trying this yourself, you can grab my Stylish script [here]({{ root_url }}/files/nonews.css). It's a work in progress so I may update this post as I refine it, and if you have any changes to suggest please post them in the comments.
+
+**Version 2 update:** I removed notifications and counts for likes, favorites, and retweets. The buttons are still there in case you want to do those things to someone else's post. I've also removed "friend update" notifications from Facebook - the ones that don't involve you in any way. I never liked those since they were already in my news feed, and since I'm killing my news feed they have to go now. Also removed the dummy items that show up while the Facebook home page is loading.
+
+If you think I've gone too far, I added some comments so you can delete the sections you don't want to use.

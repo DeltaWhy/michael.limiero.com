@@ -1,22 +1,32 @@
 /*
- * No News Is Good News (v1)
- * 
+ * No News Is Good News (v2)
+ *
  * by Michael Limiero
  *
  * User style for Stylish. Hides the news feed from Facebook and Twitter.
+ *
+ * Changes in v2:
+ * - Hide "like" notifications from Facebook
+ * - Hide friends' updates from Facebook notifications
+ * - Hide favorite/retweet notifications from Twitter
+ * - Hide Twitter notifications that are "2nd order" (not about you)
+ * - Hide likes, favorites, and retweets
  */
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("facebook.com") {
+  /* === NEWS FEED === */
   div[id^=topnews_main_stream] { display: none; }
   #pagelet_trending_tags_and_topics { display: none; }
   #pagelet_games_rhc { display: none; }
   #pagelet_ego_pane, .ego_column { display: none; }
   div[id^=friendlist_main_stream] { display: none; }
   #pagelet_rhc_footer { display: none; }
-  #pagelet_ticker { display: none; }
+  #pagelet_ticker { display: none; } /* mini-feed */
   #pagelet_canvas_nav_content { display: none; }
-  
+  #u_0_p { display: none; }
+
+  /* === Sidebar cleanup === */
   #pagesNav ul { display: none; }
   #pagesNav:hover ul { display: block; }
   #listsNav ul { display: none; }
@@ -30,9 +40,22 @@
   #interestsNav ul { display: none; }
   #interestsNav:hover ul { display: block; }
   .homeSideNav::after { content: ' '; display: block; height: 1em; }
+
+  /* === Likes === */
+  li.UFILikeSentence { display: none; }
+  a.UFICommentLikeButton { display: none; }
+  span[data-reactid*="$likeCount"][data-reactid*="$MIDDOT"] { display: none; }
+
+  /* === Notifications === */
+
+  /* hide like notifications */
+  li[data-gt*="\"notif_type\":\"like"] { display: none; }
+  /* hide notifications that are actually news feed items */
+  li[data-gt*="\"notif_type\":\"notify_me\""] { display: none; }
 }
 
 @-moz-document domain("twitter.com") {
+  /* === NEWS FEED === */
   .stream.home-stream { display: none; }
   .trends { display: none !important; }
   li.topics { display: none; }
@@ -40,4 +63,18 @@
   .timeline-tweet-box { border-radius: 5px !important; }
   .home-tweet-box { border-radius: 4px !important; }
   #global-nav-home.new::before { content: ''; }
+
+  /* === Favorites/retweets === */
+  .tweet-stats-container { display: none; }
+  .ProfileTweet-actionCount { display: none; }
+
+  /* === Notifications === */
+  /* hide favorites and retweets from the notifications tab */
+  .stream-item-favorite.stream-item-activity-me { display: none; }
+  .stream-item-retweet.stream-item-activity-me { display: none; }
+  /* hide 2nd order notifications (someone retweeted your retweet, etc.) */
+  .stream-item-favorited_mention.stream-item-activity-me { display: none; }
+  .stream-item-favorited_retweet.stream-item-activity-me { display: none; }
+  .stream-item-retweeted_retweet.stream-item-activity-me { display: none; }
+  .stream-item-retweeted_mention.stream-item-activity-me { display: none; }
 }
