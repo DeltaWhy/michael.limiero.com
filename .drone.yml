@@ -15,7 +15,7 @@ deploy:
     user: michael
     host: bedrock.miscjunk.net
     port: 22
-    source: public
+    source: public/
     target: /srv/http/michael.limiero.com
     delete: true
     recursive: true
