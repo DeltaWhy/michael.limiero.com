@@ -1,0 +1,18 @@
+build:
+  image: ruby
+  commands:
+    - bundle package
+    - bundle install --deployment
+    - bundle exec rake generate
+  cache:
+    mount:
+      - vendor/cache
+deploy:
+  rsync:
+    user: root
+    host: 127.0.0.1
+    port: 22
+    source: public
+    target: /srv/http/michael.limiero.com
+    delete: true
+    recursive: true
