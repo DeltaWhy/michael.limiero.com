@@ -7,9 +7,9 @@ build:
     - bundle install --deployment
     - bundle clean
     - bundle exec rake generate
-  cache:
-    mount:
-      - vendor/bundle
+cache:
+  mount:
+    - vendor/bundle
 deploy:
   rsync:
     user: michael
