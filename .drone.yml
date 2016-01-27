@@ -10,7 +10,7 @@ build:
 deploy:
   rsync:
     user: michael
-    host: 127.0.0.1
+    host: bedrock.miscjunk.net
     port: 22
     source: public
     target: /srv/http/michael.limiero.com
