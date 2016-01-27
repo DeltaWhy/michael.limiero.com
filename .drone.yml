@@ -9,7 +9,7 @@ build:
       - vendor/cache
 deploy:
   rsync:
-    user: root
+    user: michael
     host: 127.0.0.1
     port: 22
     source: public
