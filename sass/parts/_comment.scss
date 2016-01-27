@@ -14,7 +14,7 @@
     margin-bottom: 20px;
     .webmention-mention {
         @include border-shadow();
-        padding: 4px 0 4px 56px;
+        padding: 4px 0 4px 60px;
         position: relative;
         min-height: 56px;
         .webmention-author {
@@ -32,6 +32,24 @@
         .webmention-name {
             font-style: italic;
         }
+        .webmention-author a:after {
+            display: inline-block;
+            text-indent: -5000em;
+            height: 16px;
+            width: 16px;
+            border-radius: 8px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        .webmention-author a[href^="https://www.facebook.com"]:after {
+            content: "via Facebook";
+            background: url('/images/social/facebook.png') center/10px no-repeat #3b5998;
+        }
+        .webmention-author a[href^="https://twitter.com"]:after {
+            content: "via Twitter";
+            background: url('/images/social/twitter.png') center/10px no-repeat #55cff8;
+        }
     }
     .webmention-facepile {
         @include border-shadow();
@@ -40,13 +58,13 @@
     .webmention-facepile > li {
         display: inline-block;
         position: relative;
-        margin: 0 5px 5px 0;
+        margin: 0 10px 10px 0;
     }
     .webmention-interaction-presentation:after {
         display: block;
         position: absolute;
-        bottom: -4px;
-        right: -4px;
+        bottom: -8px;
+        right: -8px;
         padding: 4px;
         width: 1em;
         height: 1em;
