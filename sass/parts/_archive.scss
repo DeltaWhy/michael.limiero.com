@@ -65,7 +65,7 @@
 					color: $color-gray01;
 				}
 			}
-                        .date, .tags, .comments, .permalink{
+                        div.date, .tags, .comments, .permalink{
                             padding-left: 30px;
                             position: relative;
                             &:before{
@@ -76,7 +76,7 @@
                                 left: 0;
                             }
                         }
-			.date:before{content: "\f073";}
+			div.date:before{content: "\f073";}
 			.tags:before{content: "\f02c";}
 			.comments:before{content: "\f075";}
                         .permalink:before{content: "\f0c1";}
